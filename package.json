@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack",
     "start": "node server/index.js",
-    "test": "npm run build && mocha test/**/*.spec.js --exit"
+    "test": "npm run build && mocha test/**/*.spec.js --exit",
+    "postinstall": "npx playwright install"
   },
   "dependencies": {
     "babel": "^6.23.0",
